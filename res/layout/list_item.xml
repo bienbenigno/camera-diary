@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp">
+    <TextView android:id="@+id/event_id"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+	    style="@style/ListText" />
+	<LinearLayout android:layout_width="50dp" android:layout_height="fill_parent"
+		android:orientation="vertical" android:layout_margin="5dp"
+		android:background="@drawable/border">
+		<TextView
+		    android:id="@+id/day"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="bottom|center_horizontal"
+		    android:singleLine="true"
+		    style="@style/TextSuperLarge"
+		/>
+		<TextView
+		    android:id="@+id/weekday"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="top|center_horizontal"
+		    android:singleLine="true"
+		    android:text="SAT"
+		    style="@style/TextMedium"
+		/>
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:orientation="vertical" android:paddingLeft="10dp">
+		<TextView
+		    android:id="@+id/text1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="bottom"
+		    android:paddingTop="5dp"
+		    android:singleLine="true"
+		    style="@style/ListText"
+		/>
+		<TextView
+		    android:id="@+id/text2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="top"
+		    android:paddingBottom="10dp"
+		    android:singleLine="true"
+		    style="@style/ListSubText"
+		/>
+	</LinearLayout>
+</LinearLayout>

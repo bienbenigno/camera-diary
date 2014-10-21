@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#fff">
+
+	<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1">
+		
+		<LinearLayout android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+			style="@style/HeaderPanel"
+			android:background="@drawable/header_gradient"
+	    	>
+			<LinearLayout android:orientation="vertical"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="90">
+				<TextView android:id="@+id/event"
+					android:textSize="25sp" android:gravity="center_vertical|center_horizontal"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:textColor="#FF000000"
+				 />
+				<TextView android:id="@+id/btn_date" android:text="Change the date"
+					android:textSize="15sp" android:gravity="center_vertical|center_horizontal"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:textColor="#414141" />
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+			    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+			    	android:layout_weight="10">
+			    <Button android:layout_width="fill_parent"
+		    		android:id="@+id/btn_new_item"
+		    		android:gravity="center_horizontal"
+					android:layout_height="wrap_content"
+					android:drawableTop="@drawable/add2"
+					android:textSize="1dp"
+					android:text="" />
+			</LinearLayout>
+		</LinearLayout>
+		
+		<TabHost
+		    android:id="@android:id/tabhost"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:padding="5dp">
+		    <LinearLayout
+		        android:orientation="vertical"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:paddingBottom="5dp">
+		        <TabWidget
+		            android:id="@android:id/tabs"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content" />
+		        <FrameLayout
+		            android:id="@android:id/tabcontent"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:padding="5dp" />
+		    </LinearLayout>
+		</TabHost>
+	</LinearLayout>
+</LinearLayout>
